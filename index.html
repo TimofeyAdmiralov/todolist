@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Todo list</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h3 class="title"><i class='bx bx-edit'></i>Todo List</h3>
+
+      <input type="text" inputmode="text" id='input_text' class="input" placeholder="Enter you text">
+
+      <button class="add-todo" id="add-todo" type="submit">
+        <i class='bx bx-plus'></i>Добавить дело</button>
+
+      <div class="content-todo">
+        <h3 class="todo-title">
+          <i class='bx bx-notepad'></i>Your Todo:</h3>
+        <p class="not-todo"><i class='bx bxs-notepad'></i>Your todo list empty</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script defer>
+  const input = document.getElementById('input_text');
+  const addButton = document.getElementById('add-todo');
+
+  addButton.addEventListener('click', () => {
+   if (input.value != "") {
+    alert('Function add todo-list development!')
+   } else {
+    alert('Please typing text in input')
+   }
+  });
+</script>
+</html>
